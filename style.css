@@ -400,11 +400,11 @@ h1{
 }
 
 .news-drop-down{
-    padding: 12px;
+    padding: 14px;
     background-color: white;
     border-top:1px solid rgba(128, 128, 128, 0.267);
     color:#004275;
-    border-bottom: 3px solid #004275;
+    border-bottom: 4px solid #004275;
     font-size: 16px;
     font-weight:600px;
 }
@@ -463,16 +463,46 @@ h1{
     flex:1 1 auto;
     justify-content: space-between;
 }
-    
 
+.card-content span{
+     font-size: 18px;
+     font-weight: 600;
+}
 
+.card-text{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    column-gap:10px;
+}
+.card-text span{
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5rem;
+    padding-bottom:15px;
+}
 
+.card-text div{
+   font-weight:400;
+   font-size:16px;
+   line-height:1.5rem;
+   letter-spacing: .03em;
+   margin:0;
+}
 
-
+.block-slim{
+    margin-top:32px;    
+}
 
 .btn-action{
     background-color: #0078d4;
     padding: 8px 10px;
     border-radius: 5px;
     margin:0;
+}
+
+.block-slim a{
+    color:#004275;
+    font-weight: 600;
 }
