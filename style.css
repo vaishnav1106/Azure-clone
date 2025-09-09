@@ -97,6 +97,7 @@ button .img  {
 /* Button */
 
 .dropbtn {
+
     background-color: transparent;
     color: black;
     display: flex;
@@ -110,6 +111,7 @@ button .img  {
     border: none;
     cursor: pointer;
     border-radius: 6px;
+     
 }
 
 
@@ -161,6 +163,7 @@ button .img  {
 /* Dropdown */
 
 .dropdown-content {
+     position: absolute; 
     display: none;
     background-color: #f2f2f2;
     border-bottom: 1px solid #000;
@@ -169,6 +172,7 @@ button .img  {
     z-index: 1000;
     width: 100%;
     cursor: pointer;
+   
 
 
 }
@@ -340,14 +344,14 @@ a {
     padding: 0px 15px 0px 0px;
     color:#17253D;
     font-family: inherit; 
-    font-size:15px;
+    font-size:16px;
     line-height: 1.4rem;
     width:100%;
 }
 
 h1{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 38px;
     width:100%;
 }
 
@@ -417,7 +421,7 @@ h1{
 
 
 .highlight-main{
- margin-top:3.5rem;
+ margin:3.5rem 0;
  padding: 0 1.1rem;
     
 }
@@ -487,7 +491,7 @@ h1{
    font-weight:400;
    font-size:16px;
    line-height:1.5rem;
-   letter-spacing: .03em;
+   letter-spacing: 0em;
    margin:0;
 }
 
@@ -496,13 +500,16 @@ h1{
 }
 
 .btn-action{
+    display: flex;
     background-color: #0078d4;
     padding: 8px 10px;
     border-radius: 5px;
     margin:0;
+    align-items: center;
 }
 
 .block-slim a{
     color:#004275;
     font-weight: 600;
+    padding: 0;
 }
