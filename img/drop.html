@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Hover with SVG Icons</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Hide the up icon by default */
+    .icon-up {
+      display:none ;
+    }
+
+    /* When hovering dropdown, swap icons */
+    .dropdown:hover .icon-down {
+      display: none;
+    }
+
+    .dropdown:hover .icon-up {
+      display: inline;
+    }
+
+    /* Dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Optional: make SVG icons look nice */
+    svg {
+      fill: white;
+      width: 14px;
+      height: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">
+    Menu
+    <!-- Down Arrow Icon -->
+    <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M7 10l5 5 5-5z"/>
+    </svg>
+    <!-- Up Arrow Icon -->
+    <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M7 14l5-5 5 5z"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-content">
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+    <a href="#">Option 3</a>
+  </div>
+</div>
+
+</body>
+</html>
