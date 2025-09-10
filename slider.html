@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion Example</title>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css">
-  <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-up?f=classic&s=light&sz=xs&pc=%230e1726&sc=%230e1726">
+  <!-- <link rel="stylesheet"
+    href="https://fontawesome.com/icons/chevron-up?f=classic&s=light&sz=xs&pc=%230e1726&sc=%230e1726"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
@@ -13,17 +15,17 @@
     body {
       font-family: Arial, sans-serif;
       background: #f5f8fb;
-      padding:0;
-      margin:0;
+      padding: 0;
+      margin: 0;
     }
 
-    .solution-accordion{
-      padding:0 24px;
+    .solution-accordion {
+      padding: 0 24px;
     }
 
     .accordion {
-      border-bottom: 1.3px solid #cccccc8e;
-      
+      border-bottom: 1.3px solid #cccccc9d;
+
     }
 
     /* Hide checkbox */
@@ -35,13 +37,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size:18px;
+      font-size: 18px;
       font-weight: 545;
       cursor: pointer;
-      padding:24px 0;
+      padding: 24px 0;
       line-height: 1.5rem;
       text-align: left;
-      
+      color:#0e1726;
     }
 
     /* Arrow indicator */
@@ -51,25 +53,56 @@
     } */
 
     /* Rotate arrow when open */
-    .accordion input:checked + label i {
+    .accordion input:checked+label i {
       transform: rotate(-180deg);
     }
 
     .content {
-      max-height: 0;   /*collapse to 0 height*/
+      max-height: 0;
+      /*collapse to 0 height*/
       /*how this work =>.1 by default  the content squeezed t0 0px tall(like we fold the paper). */
       overflow: hidden;
       transition: max-height 0.4s ease;
       padding: 0 15px;
+      margin-bottom:24px;
     }
+
     /* When you click the checkbox in the accordion, 
     we’re not actually showing/hiding with 
     display: none. Instead, we use a CSS trick 
     with max-height + overflow: hidden. */
 
-    .accordion input:checked ~ .content {
-      max-height: 200px; /* enough space for content */
-      padding: 15px;
+    .accordion input:checked~.content {
+      max-height: 400px;
+      /* enough space for content */
+      padding: 0px;
+    }
+
+    .content p{
+      color:#17253d;
+      font-size: 15px;
+      line-height: 1.5rem;
+      width:100%;
+    }
+
+    .section-content{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .section-content a{
+      margin-bottom: 1.5rem;
+      color: #004275;
+      padding: 0 0 2px;
+      font-size: 14px;
+      font-weight: 550;
+
+    }
+
+    .section-content img{
+            width:100%;
+            height:100%;
+            border-radius: 10px;
     }
 
     /*how this work =>.2 when the checkbox checked
@@ -77,50 +110,74 @@
     Since we set transition, it animate smoothly  */
   </style>
 </head>
+
 <body>
 
-<section class="solution-accordion"> 
-  <div class="accordion">
-    <input type="checkbox" id="section1">
-    <label for="section1">Top 25 Azure announcements at Microsoft Build 2025<i class="fi fi-ts-angle-small-down fa-xl"></i></label>
-    <div class="content">
-      <p>All the Azure news you don’t want to miss—spanning Azure AI Foundry, infrastructure, databases, and more.</p>
-    </div>
-  </div>
+  <section class="solution-accordion">
+    <div class="accordion">
+      <input type="checkbox" id="section1">
+      <label for="section1">Top 25 Azure announcements at Microsoft Build 2025<i
+          class="fi fi-ts-angle-small-down fa-xl "></i></label>
+      <div class="content">
+        <p> All the Azure news you don’t want to miss— spanning Azure AI Foundry,
+          Azure infrastructure, Azure app services, Azure databases,
+          Microsoft Fabric, and our GitHub family.
+        </p>
+        <div class="section-content">
+          <a href="#" style="margin-bottom: 1.5rem;">See top solutions from Build</a>
+          <img src="img/-accordion-1-800x513.avif" alt="Accordion img">
+        </div>
+      </div>
+    </div>  
 
-  <div class="accordion">
-    <input type="checkbox" id="section2">
-    <label for="section2">Application and data modernization<i class="fi fi-ts-angle-small-down fa-xl"></i></label>
-    <div class="content">
-      <p>Details about modernization go here.</p>
-    </div>
-  </div>
+      <div class="accordion">
+        <input type="checkbox" id="section2">
+        <label for="section2">Application and data modernization<i class="fi fi-ts-angle-small-down fa-xl"></i></label>
+        <div class="content">
+          <p>Deliver enhanced application and data experiences even faster.</p>
+          <div class="section-content">
+            <a href="#" style="margin-bottom: 1.5rem;">Discover app and data modernization</a>
+            <img src="img/accordion-2-800x513.webp" alt="Accordion-img">
+          </div>
+        </div>
+      </div>
 
-  <div class="accordion">
-    <input type="checkbox" id="section3">
-    <label for="section3">DevOps <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
-    <div class="content">
-      <p>DevOps solutions and announcements.</p>
-    </div>
-  </div>
+      <div class="accordion">
+        <input type="checkbox" id="section3">
+        <label for="section3">DevOps <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
+        <div class="content">
+          <p>DevOps solutions and announcements.</p>
+          <div class="section-content">
+            <a href="#" style="margin-bottom:1.5rem;"></a>
+            <img src="img/accordion-3.webp" alt="Accordion-img">
+          </div>
+        </div>
+      </div>
 
-  <div class="accordion">
-    <input type="checkbox" id="section4">
-    <label for="section4">Azure cloud secuity <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
-    <div class="content">
-      <p></p>
-      <img src="" alt="">
-    </div>
-  </div>
+      <div class="accordion">
+        <input type="checkbox" id="section4">
+        <label for="section4">Azure cloud secuity <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
+        <div class="content">
+          <p>Build and scale securely on the Azure platform—designed and operated with security at every layers.</p>
+          <div class="section-content">
+            <a href="#">Explore Azure security</a>
+          <img src="img/accordion-4.webp" alt="">
+          </div>
+        </div>
+      </div>
 
-  <div class="accordion">
-    <input type="checkbox" id="section5">
-    <label for="section5">Azure Accelerate <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
-    <div class="content">
-      <p></p>
-      <img src="" alt="">
-    </div>
-  </div>
-</section> 
+      <div class="accordion">
+        <input type="checkbox" id="section5">
+        <label for="section5">Azure Accelerate <i class="fi fi-ts-angle-small-down fa-xl"></i></label>
+        <div class="content">
+          <p></p>
+          <div class="section-content">
+            <a href="#"></a>
+          <img src="" alt="">
+          </div>
+        </div>
+      </div>
+  </section>
 </body>
+
 </html>

@@ -637,7 +637,7 @@ h1{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size:18.5px;
+      font-size:18px;
       font-weight: 540;
       cursor: pointer;
       padding:24px 0;
@@ -662,7 +662,7 @@ h1{
       /*how this work =>.1 by default  the content squeezed t0 0px tall(like we fold the paper). */
       overflow: hidden;
       transition: max-height 0.4s ease;
-      padding: 0 15px;
+      padding: 0px;
     }
     /* When you click the checkbox in the accordion, 
     we’re not actually showing/hiding with 
@@ -671,9 +671,10 @@ h1{
 
     .accordion input:checked ~ .content {
       max-height: 200px; /* enough space for content */
-      padding: 15px;
+      padding: 0px;
     }
 
     /*how this work =>.2 when the checkbox checked
     (input:checked~.content) the content area expends to 200px. 
     Since we set transition, it animate smoothly  */
+
