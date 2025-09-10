@@ -514,18 +514,22 @@ h1{
 .btn-action{
     display: flex;
     justify-content: center;
-    background-color: #0078d4;
-    padding: 8px 10px;
-    border-radius: 5px;
-    margin:0;
     align-items: center;
+    background-color: #0078d4;
+    padding: 8px 9px;
+    border-radius: 7px;
+    margin:0;
+    
 }
 
 .block-slim a{
+    font-size:14px;
+    display: flex;
     color:#004275;
     font-weight: 600;
     padding: 0;
-}
+    align-items: center;
+    justify-content: center;}
 
 .solution{
     padding: 0 1.1rem;
@@ -683,6 +687,7 @@ h1{
         font-size:15px;
         line-height:1.5rem;
         width:100%;
+        margin-bottom:24px ;
     }
 
     .section-content{
@@ -703,3 +708,4 @@ h1{
         height:100%;
         border-radius:10px;
     }
+
