@@ -13,6 +13,12 @@
     body {
       font-family: Arial, sans-serif;
       background: #f5f8fb;
+      padding:0;
+      margin:0;
+    }
+
+    .solution-accordion{
+      padding:0 24px;
     }
 
     .accordion {
@@ -30,18 +36,19 @@
       justify-content: space-between;
       align-items: center;
       font-size:18px;
-      font-weight: 540;
+      font-weight: 545;
       cursor: pointer;
       padding:24px 0;
-
+      line-height: 1.5rem;
+      text-align: left;
       
     }
 
     /* Arrow indicator */
-    .accordion label i{
+    /* .accordion label i{
       content: "";
       transition: transform 0.3s ease;
-    }
+    } */
 
     /* Rotate arrow when open */
     .accordion input:checked + label i {
@@ -72,7 +79,7 @@
 </head>
 <body>
 
-
+<section class="solution-accordion"> 
   <div class="accordion">
     <input type="checkbox" id="section1">
     <label for="section1">Top 25 Azure announcements at Microsoft Build 2025<i class="fi fi-ts-angle-small-down fa-xl"></i></label>
@@ -114,6 +121,6 @@
       <img src="" alt="">
     </div>
   </div>
-
+</section> 
 </body>
 </html>
