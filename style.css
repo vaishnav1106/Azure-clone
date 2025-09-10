@@ -345,7 +345,7 @@ a {
     color:#17253D;
     font-family: inherit; 
     font-size:16px;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     width:100%;
 }
 
@@ -421,9 +421,9 @@ h1{
 
 
 .highlight-main{
- margin:3.5rem 0;
- padding: 0 1.1rem;
-    
+ margin-top:3.5rem;
+ margin-bottom: 56px;
+ padding: 0 1.1rem; 
 }
 
 .highlight-main h2{
@@ -432,13 +432,20 @@ h1{
 }
 
 .card-section{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
   margin-top: 2rem;
+  padding-bottom:3.5rem;
+  
 }
 
 .card{
+    border-radius: 10px;
     display:flex;
     max-width: 515px;
     width:100%;
+    box-shadow:0 0 0.125rem var(--root-depth-color-1, rgba(0, 0, 0, 0.12)),0 0.125rem 0.25rem var(--root-depth-color-2, rgba(0, 0, 0, 0.14));
 }
 
 .card1{
@@ -483,24 +490,30 @@ h1{
 .card-text span{
     width: 100%;
     font-size: 18px;
+    font-weight: 600;
     line-height: 1.5rem;
     padding-bottom:15px;
 }
 
 .card-text div{
+    width:100%;
    font-weight:400;
    font-size:16px;
    line-height:1.5rem;
-   letter-spacing: 0em;
+   letter-spacing: 0px;
    margin:0;
+   text-align: left;
 }
 
 .block-slim{
-    margin-top:32px;    
+    margin-top:32px;   
+    display: flex; 
+    gap:.4rem;
 }
 
 .btn-action{
     display: flex;
+    justify-content: center;
     background-color: #0078d4;
     padding: 8px 10px;
     border-radius: 5px;
@@ -513,3 +526,142 @@ h1{
     font-weight: 600;
     padding: 0;
 }
+
+.solution{
+    padding: 0 1.1rem;
+}
+.solution-text p{
+    text-transform: uppercase;
+    margin-bottom: .75rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: .08em;
+}
+
+.solution-text h2{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+.solution-text{
+    margin-bottom:40px;
+}
+
+.slider-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 600px;
+      overflow: hidden;
+      
+    }
+
+    .slider {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 5px;
+      background-color:rgba(255, 255, 255, 0.329);
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pill-btn {
+      flex: 0 0 auto;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      background: #e6f0f8;
+      color: #004080;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+
+    .pill-btn.active {
+      background: #004f9f;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .arrow-btn {
+      display: flex;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #004080;
+      border-radius: 100%;
+      background: #ffffff62;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: #004080;
+      transition: background 0.3s;
+    }
+
+    .arrow-btn:hover {
+      background: #f0f6ff;
+    }
+
+    .solution-sub-text{
+        margin-top: 30px;
+    }
+    .solution-sub-text span{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+
+    /* /////////trial//////////// */
+
+     .accordion {
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Hide checkbox */
+    .accordion input {
+      display: none;
+    }
+
+    .accordion label {
+      display: block;
+      padding: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+    }
+
+    /* ▼ */
+    /* Arrow indicator */
+    .accordion label::after {
+      font-family: azure;
+      content: "⌃";
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when open */
+    .accordion input:checked + label::after {
+      transform: rotate(-180deg);
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 15px;
+    }
+
+    .accordion input:checked ~ .content {
+      max-height: 200px; /* enough space for content */
+      padding: 15px;
+    }
