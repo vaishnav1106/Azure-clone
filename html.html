@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box {
+  position: relative;
+  max-width: 265px; /* match your image size */
+  max-height: 428px;
+  height:100vh;
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.15); */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.promo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex:1;
+  align-items: flex-end; /* push overlay content to bottom */
+  padding: 16px;
+  
+}
+
+/* .safe-area {
+  flex: 1; this can act as a spacer if you want
+  width:100%;                     
+} */ 
+
+.overlay {
+ 
+  color: #000000;
+  border-radius: 0 0 120px 200px;
+}
+
+.overlay h3 {
+  font-size: 1rem;
+  margin: 0 0 6px;
+}
+
+.overlay p {
+  font-size: 0.85rem;
+  margin: 0 0 12px;
+}
+
+.card-button {
+  display: inline-block;
+  background: #0078d4; /* Azure blue */
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.card-button:hover {
+  background: #e4f2fd;
+}
+
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="image-box">
+            <img src="img/promo-card-featured-328x266.avif" alt="Sample Image">
+
+            <div class="promo">
+                <div class="safe-area"></div>
+                <!-- Overlay content -->
+                <div class="overlay">
+                    <h3>This is a heading</h3>
+                    <p>This is a paragraph on the image sdfadfasd asdfasdf asdfasd asdfa sdfa sdf</p>
+                    <button class="card-button">Click Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

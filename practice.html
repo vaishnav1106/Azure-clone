@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Cards</title>
+  <style>
+    */
+    .card {
+  width: 286px; /* same width */
+  border-radius: 12px;
+  overflow: hidden;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+     
+}
+.card.main-card{
+
+  width:100%;
+  border-radius: 20px;
+   border:none;
+}
+
+.main-card {
+  height: 450px; /* full card height */
+  background: url("img/promo-card-featured-328x266.avif") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* keep text at the bottom */
+  /*color: #fff;  make text readable */
+ overflow:hidden;
+}
+
+.icon{
+   width: 100%;
+   height:100%;
+
+}
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border:none;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #17253D;
+}
+
+.card-content p {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.card-button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.card-button:hover {
+  background: #1e40af;
+}
+
+  
+  </style>
+</head>
+<body>
+       <div class="card main-card">
+  
+  <!-- <div class="card-content">
+    <h3>Azure AI Foundry</h3>
+    <p>Build, evaluate, and deploy generative AI solutions and custom agents.</p>
+    <a href="#" class="card-button">Explore the product</a>
+  </div> -->
+</div>
+
+<div class="small-card">
+  <div class="card-content">
+    <img src="img/s-card1.svg" alt="Azure Logo" class="icon"/>
+    <h3>Azure AI Foundry Agent Service</h3>
+    <p>Securely design, deploy, and scale AI agents with ease.</p>
+    <a href="#" class="card-button">Explore the product</a>
+  </div>
+</div>
+
+</body>
+</html>
