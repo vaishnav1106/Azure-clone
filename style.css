@@ -503,7 +503,7 @@ h1 {
     margin: 0;
     text-align: left;
 }
-
+/* //////////button and text on side by side//////////// */
 .block-slim {
     margin-top: 30px;
     display: flex;
@@ -529,7 +529,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-
+/* ////////solution///////// */
 .solution {
     padding: 56px 1.1rem;
    
@@ -872,4 +872,149 @@ h1 {
     font-size:14px;
     font-weight:500;
     color:#004275;
+}
+
+.background img{
+    object-fit:cover;
+    width:100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+/* ////////////gartner///////////// */
+
+.gartner-card-body{
+    padding:0 20px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    height:100vh;
+    background:url("img/microsoft-background-1600x690.avif") no-repeat center center/cover;
+}
+.gartner-card{
+    background:#fff;
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.1);
+    padding:8px;
+}
+
+.gartner-card-img img{
+    border-radius:12px;
+    width:100%;
+}
+.gartner-card-text h3{
+font-size :18px;
+margin-bottom:10px;
+color:#0e1726;
+font-size:24px;
+font-weight:500;
+line-height:32px;
+}
+
+.gartner-card-text p{
+    font-size:18px;
+    color:#17253D;
+    line-height:1.75rem;
+    margin:14px 0;
+    padding-bottom: 25px;
+}
+
+.gartner-card-text button{
+    background:#0078d4;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    width:100%;
+}
+
+.gartner-card-text{
+    margin-top:35px;
+    padding: 5px 5px 10px;
+}
+
+.resources{
+    padding: 0 20px;
+}
+
+.resources-body{
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    padding:48px 0px 0;
+    margin:0 0 24px;
+}
+
+.resources-text p {
+    font-size: 12px;
+    color:#17253D;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+}
+
+.resources-text h2{
+    font-size:32px;
+    color:#0e1726;
+    font-weight:500;
+}
+
+/* ///////////resources-slider/////////// */
+
+   .azure-services{
+    padding:25px 15px 10px;
+    box-sizing: border-box;
+}
+.slider-services {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+    border: .1px solid rgba(128, 128, 128, 0.185);
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+.slider-services::-webkit-scrollbar {
+    display: none;
+}
+
+.slide-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 0 0 auto;
+    padding: 12px 16px 16px;
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffffff;
+    color:#0e1726 ;
+    transition: all 0.3s;
+    font-weight: 500;
+    width:100%;
+    max-width:220.67px;
+    text-align: left;
+    margin:0;
+}
+
+.slide-btn.active {
+    padding:12px;
+    border-bottom: 4px solid #004f9f;
+}
+
+.services-button{
+  display: flex;
+  gap:10px;
+  margin-top:24px;
+}
+.ser-btn{
+  padding:4.34px 8px;
+  border-radius: 100%;
+  border:2px solid #004275;
+  background: transparent;
+  align-items: center;
+  margin:0;
 }

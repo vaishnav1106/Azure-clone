@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multi-level Dropdown</title>
-  <link rel="stylesheet" href="drop.css">
+  <title>Microsoft Gartner Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 100vh;
+      background: url("img/microsoft-background-1600x690.avif") no-repeat center center/cover;
+    }
+
+    .card {
+      background: #fff;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      /* overflow: hidden; */
+      /* text-align: center; */
+      padding: 8px;
+    }
+
+    .card img {
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #0E1726;
+      font-size: 24px;
+      font-weight:500;
+      line-height: 32px;
+    }
+
+    .card p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16.5px;
+      color: #17253D;
+      line-height: 1.75rem;
+      margin: 14px 0;
+    }
+
+    .card button {
+      background: #0078D4;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .gartner-card-text{
+      margin-top:28px;
+      padding: 5px 5px 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="dropdown">
-    <button class="dropbtn">Menu </button>
-    <div class="dropdown-content">
-      <a href="#">Option 1</a>
-      <a href="#">Option 2</a>
+  <div class="card">
+    <div card-img>
+      <img src="img/gartner-accouncement-new-image.avif" alt="Gartner Logo">
+    </div>
 
-      <!-- Submenu starts here -->
-      <div class="sub-dropdown">
-        <a href="#">More 〉</a>
-        <div class="sub-dropdown-content">
-          <a href="#">Sub Option 1</a>
-          <a href="#">Sub Option 2</a>
-          <a href="#">Sub Option 3</a>
-        </div>
-      </div>
-      <!-- Submenu ends -->
-
-
-      
-
-      <a href="#">Option 3</a>
+    <div class="gartner-card-text">
+      <h3>See why Microsoft was named a Leader by Gartner®</h3>
+      <p>
+        Discover why Microsoft was named a Leader and positioned furthest to the right for Completeness of Vision in the
+        2024 Magic Quadrant™ for Strategic Cloud Platform Services (SCPS).
+      </p>
+      <button>Read the blog</button>
     </div>
   </div>
 </body>
