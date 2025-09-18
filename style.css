@@ -529,6 +529,13 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.service-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
 /* ////////solution///////// */
 .solution {
     padding: 56px 1.1rem;
@@ -559,6 +566,7 @@ h1 {
     gap: 10px;
     max-width: 600px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .slider {
@@ -945,7 +953,7 @@ line-height:32px;
     /* display: flex;
     flex-direction: column; */
     text-align: center;
-    padding:48px 0px 0;
+    padding:48px 0px 0px;
     margin:0 0 24px;
 }
 
@@ -966,23 +974,24 @@ line-height:32px;
 /* ///////////resources-slider/////////// */
 
    .azure-services{
-    padding:25px 15px 10px;
+    padding:2px 15px 48px;
     box-sizing: border-box;
-}
+    background: url(img/resources-by-role-background.avif) no-repeat center center/cover;
+    background-position: center;
+}   
 .slider-services {
     display: flex;
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
     border-radius: 12px;
-    border: .1px solid rgba(128, 128, 128, 0.185);
-    background-color: rgba(255, 255, 255, 0.329);
+    border: 1px solid rgba(128, 128, 128, 0.185);
 }
 
 .slider-services::-webkit-scrollbar {
     display: none;
 }
-
+                  
 .slide-btn {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex: 0 0 auto;
@@ -1017,4 +1026,76 @@ line-height:32px;
   background: transparent;
   align-items: center;
   margin:0;
+}
+
+.section-media{
+    display: flex;
+    flex-direction: column;
+    padding-top:24px;
+    
+}
+
+.media-text{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.media-text span{
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+}
+
+.section-img-body{
+ margin:22px 0 0;
+    padding:16px;
+    background-color: #ffffff42;
+    border-radius:12px;
+}
+
+.section-media-img{
+   
+}
+
+.media-img img{
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}
+.section-lower{
+    background: url(img/azure-global-infrastructure-background-1600x368.avif)no-repeat center center/cover;
+
+}
+.section-lower-text{
+    padding: 48px 20px;
+    color:#f4f4fd;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+   
+}
+.section-lower-text h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.section-lower-text span{
+    /* font-size: 15px;
+    padding:0 16px;
+    color: #DCEEF8;
+    line-height:1.6rem; */
+    padding-bottom:5px;
+   
+}
+
+.section-lower-text button{
+    width:100%;
+    padding:14px;
+    margin:0;
+    background-color:#B3DAF0;
+    color:#0e1726;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight:500;
 }

@@ -1,0 +1,16 @@
+.blur-card{
+    position: relative;
+    width:500px;
+    height:300px;
+    border-radius:20px;
+    overflow:hidden;
+    border:6px solid rgba(255, 255 255,0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.blue-card img{
+    width:100%;
+    object-fit:cover;
+    border-radius: 14px;
+}
+
