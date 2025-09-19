@@ -574,7 +574,7 @@ h1 {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.329);
+    background-color: rgba(255, 255, 255, 0.041);
 }
 
 .slider::-webkit-scrollbar {
@@ -589,7 +589,7 @@ h1 {
     font-size: 14px;
     cursor: pointer;
     background: #e6f0f8;
-    color: #004080;
+    color: #004275;
     transition: all 0.3s;
     font-weight: 500;
 }
@@ -602,7 +602,7 @@ h1 {
 
 .arrow-btn {
     display: flex;
-    width: 36px;
+    width: 40px;
     height: 36px;
     border: 2px solid #004080;
     border-radius: 100%;
@@ -613,12 +613,9 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     color: #004080;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
-.arrow-btn:hover {
-    background: #f0f6ff;
-}
 
 .solution-sub-text {
     margin-top: 30px;
