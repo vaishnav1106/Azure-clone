@@ -439,7 +439,7 @@ h1 {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     max-width: 515px;
     width: 100%;
@@ -523,6 +523,7 @@ h1 {
 }
 
 .block-slim a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     display: flex;
     color: #004275;
@@ -912,55 +913,81 @@ h1 {
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 100vh;
+    height: 98vh;
     background: url("img/microsoft-background-1600x690.avif") no-repeat center center/cover;
 }
 
 .gartner-card {
     background: #fff;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 8px;
+   
 }
-
+.gartner-card-content{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
 .gartner-card-img img {
     border-radius: 12px;
     width: 100%;
+    margin-bottom: 40px;
+}
+.gartner-card-text{
+    font-family:"Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif ;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .gartner-card-text h3 {
+     font-family:"Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif ;
     font-size: 18px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: #0e1726;
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
+    letter-spacing:-.8px;
 }
 
 .gartner-card-text p {
+    font-family:"Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif ;
     font-size: 18px;
     color: #17253D;
     line-height: 1.75rem;
-    margin: 14px 0;
-    padding-bottom: 25px;
+    /* margin: 14px 0;
+    padding-bottom: 25px; */
+    text-align: start;
+    letter-spacing: -.8px;
+}
+.gartner-card-button{
+    padding-bottom:10px;
 }
 
-.gartner-card-text button {
+.gartner-card-button button {
     background: #0078d4;
     color: white;
     border: none;
     padding: 12px 18px;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
     width: 100%;
+    font-size:15px;
+    margin:0;
 }
 
-.gartner-card-text {
+/* .gartner-card-text {
     margin-top: 35px;
-    padding: 5px 5px 10px;
-}
+    padding: 5px 5px 10px;  
+} */
+
+/* /////////////////////Resources////////////////////// */
 
 .resources {
     padding: 0 20px;
@@ -1063,7 +1090,9 @@ h1 {
 }
 
 .media-text span {
-    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
     display: flex;
 }
@@ -1088,7 +1117,7 @@ h1 {
 }
 
 .section-lower-text {
-    padding: 48px 20px;
+    padding: 50px 20px 60px;
     color: #f4f4fd;
     display: flex;
     flex-direction: column;
@@ -1125,7 +1154,7 @@ h1 {
 /* /////////////testimonial//////////// */
 
 .customer-story {
-    padding: 50px 18px 0;
+    padding: 50px 16px 50px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -1143,6 +1172,7 @@ h1 {
 .customer-stories {
     display: flex;
     flex-direction: column;
+    align-items: left;
     gap: 5px;
 }
 
@@ -1155,9 +1185,9 @@ h1 {
 }
 
 .customer-stories h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 440;
     line-height: 40px;
     color: #0e1726;
     letter-spacing: -.8px;
@@ -1182,12 +1212,13 @@ h1 {
 }
 
 .stories-slider {
-    padding: 0 2px;
     background-color: #f4fafd;
-    /* background-color: white; */
+     margin:0;
 }
 
 .slider-card {
+    /* border: 2px solid rgba(117, 117, 117, 0.185);
+    border-radius: 15px; */
     display: flex;
     background-color: #f4fafd;
     overflow-x:scroll;
@@ -1205,9 +1236,9 @@ h1 {
     flex-direction: column;
     max-width:325.33px;
     width:100%;
-    border-radius: 15px;
     flex: 0 0 auto;
-    border: 1px solid rgba(128, 128, 128, 0.185);
+    border: 2px solid rgba(133, 132, 132, 0.185);
+    border-radius: 15px;
     transition: all 0.3s;
     background-color: #ffffff;;
 }
@@ -1241,7 +1272,6 @@ h1 {
 }
 
 .card-logo span {
-
     font-size: 20px;
     color: #172530;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1323,5 +1353,55 @@ h1 {
     background: transparent;
     margin: 0 0 24px;
     font-size: 16px;
+}
 
+.last-card-azure{
+    padding:0 20px 50px;
+    background: url(img/Take-The-Next-Step-Background-1600x552.avif) no-repeat center top/cover;
+}
+.last-card-text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.last-card-text h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:32px;
+    font-weight: 500;
+}
+
+.cards-content{
+    border-radius: 20px;
+    background-color: white;
+    padding:16px;
+    font:16px;
+    color:#17253D;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border:1px solid rgba(128, 128, 128, 0.288);
+}
+
+.cards-content span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    color:#0E1726;
+}
+
+.cards-content div{
+    color:#17253D;
+    font-size:16px;
+
+}
+
+.last-cards{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    background-color: transparent;
+}
+
+.last-card-button{
+    margin-top:18px;
 }
