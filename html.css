@@ -1,16 +1,33 @@
-.blur-card{
-    position: relative;
-    width:500px;
-    height:300px;
-    border-radius:20px;
-    overflow:hidden;
-    border:6px solid rgba(255, 255 255,0.3);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+.last-list ul {
+  display: flex;
+  flex-wrap: wrap;           /* allow wrapping */
+  justify-content: left;   /* center items horizontally */     
+  text-align: left;       /* row & column spacing */
+  list-style: none;
+  gap:5px;
+  margin: 0;
+  padding: 0;
 }
-.blue-card img{
-    width:100%;
-    object-fit:cover;
-    border-radius: 14px;
+
+.last-list li {          /* item takes only as much space as its content */
+  white-space: nowrap;       /* prevent text breaking */
+  font-size: 14px;
+  color: #666;
+  padding: 6px 10px 0 0;
+  float:left;
 }
+
+/* force 3 items in first row, 3 in second */
+/* .last-list li:nth-child(3n) {
+  margin-right: 10%;         pushes next item to a new row after every 3rd 
+} */
+
+                                                        
+
+
+
+
+
+
+
 
